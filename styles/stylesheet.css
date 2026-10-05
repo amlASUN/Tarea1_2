@@ -20,6 +20,10 @@ body {
 }
 
 .columna {
-  background-color: darkslateblue;
-  text-align: center;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.video {
+    width: 50%;
 }
