@@ -10,43 +10,80 @@
 <body>
     <div class="div1_body">
         <h1>Etiquetas de autocierre by Aitor</h1>
-        <br>
+
+        <!-- 1. meta -->
+        <h2>&lt;meta&gt;</h2>
+        <p>La etiqueta meta proporciona metadatos sobre el documento HTML. Sirve para definir el juego de caracteres (charset), configurar la vista responsive para dispositivos móviles (viewport) y ofrecer una descripción que leen los buscadores.</p>
+
+        <!-- 2. link -->
+        <h2>&lt;link&gt;</h2>
+        <p>Sirve para vincular documentos externos con el archivo HTML actual, como por ejemplo la hoja de estilos CSS que le da formato a esta página.</p>
+
+        <!-- 3. br -->
+        <h2>&lt;br&gt;</h2>
+        <p>Esta etiqueta produce un salto de línea dentro de un bloque de texto.<br>Aquí hay un salto de línea en mitad de la frase para demostrar su funcionamiento.</p>
+
+        <!-- 4. hr -->
+        <h2>&lt;hr&gt;</h2>
+        <p>Representa un cambio temático entre párrafos o bloques de contenido, dibujando una línea horizontal para separarlos visualmente.</p>
+
+        <p>Texto previo a la división temático-visual.</p>
         <hr>
-        <img class="imagen" src="/images/texto.jpg" alt="MuchoTextoMeme">
-        <br>
-        <p>Crees que esto es mucho texto?</p>
-        <input> 
-        <br>
+        <p>Texto posterior a la división.</p>
+
+        <!-- 5. img -->
+        <h2>&lt;img&gt;</h2>
+        <p>Se utiliza para incrustar o mostrar imágenes dentro de la página web mediante la ruta especificada en su atributo src.</p>
+        <img class="imagen" src="images/texto.jpg" alt="MuchoTextoMeme">
+
+        <!-- 6. input -->
+        <h2>&lt;input&gt;</h2>
+        <p>Permite crear campos interactivos dentro de formularios para que los usuarios puedan introducir información o datos de texto.</p>
+        <p>¿Crees que esto es mucho texto?</p>
+        <input type="text" placeholder="Escribe tu opinión aquí...">
+
+        <!-- 7. col -->
+        <h2>&lt;col&gt;</h2>
+        <p>Permite definir propiedades o estilos específicos para columnas individuales dentro de una tabla definida mediante colgroup.</p>
         <table>
-        <colgroup>
-            <col class="columna">
-            <col>
-        </colgroup>
-        <tr>
-            <th>Nombre</th>
-            <th>Edad</th>
-        </tr>
-        <tr>
-            <td>Aitor</td>
-            <td>20</td>
-        </tr>
+            <colgroup>
+                <col class="columna">
+                <col>
+            </colgroup>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr>
+                <td>Aitor</td>
+                <td>20</td>
+            </tr>
         </table>
-        <br>
-        <embed src="/pdf/LePDF.pdf" type="application/pdf">
-        <br>
-        <object data="/pdf/LePDF.pdf" type="application/pdf">
-        <param name="autoplay" value="true">
-        <p>
-        La etiqueta &lt;param&gt; está obsoleta y los navegadores actuales
-        la ignoran, por eso no tiene ningún efecto visible.
-        </p>
+
+        <!-- 8. embed -->
+        <h2>&lt;embed&gt;</h2>
+        <p>Sirve para integrar aplicaciones externas o contenidos interactivos dentro del documento HTML, como archivos PDF o plugins multimedia.</p>
+        <embed src="pdf/LePDF.pdf" type="application/pdf">
+
+        <!-- 9. param -->
+        <h2>&lt;param&gt;</h2>
+        <p>Sirve para pasar parámetros de configuración a un objeto incrustado mediante la etiqueta object. Actualmente es una etiqueta en desuso que los navegadores ignoran, por lo que no causa un efecto visible.</p>
+        <object data="pdf/LePDF.pdf" type="application/pdf">
+            <p>Tu navegador no admite la previsualización de archivos PDF.</p>
         </object>
-        <video controls>
-            <source src="" type="video/mp4">
+
+        <!-- 10. source -->
+        <h2>&lt;source&gt;</h2>
+        <p>Se utiliza dentro de elementos multimedia como video o audio para especificar múltiples recursos o formatos de archivo compatibles.</p>
+        <p>Es un video hecho por mi de un mapa dificil de un juego llamado Arknights.</p>
+        <video class="video" controls>
+            <source src="media/video.mp4" type="video/mp4">
         </video>
-        <p>
-        EstaEsUnaPalabra<wbr>MuyLargaParaProbarElSalto
-        </p>
+
+        <!-- 11. wbr -->
+        <h2>&lt;wbr&gt;</h2>
+        <p>Indica una posición dentro del texto donde el navegador puede realizar un salto de línea opcional si el espacio disponible en la pantalla no es suficiente para la palabra completa.</p>
+        <p>EstaEsUnaPalabra<wbr>MuyLargaParaProbarElSalto</p>
     </div>
 </body>
 </html>
